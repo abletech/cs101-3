@@ -11,10 +11,12 @@
 # Page options, layouts, aliases and proxies
 ###
 
+activate :directory_indexes
+
 # Per-page layout changes:
 #
 # With no layout
-# page "/path/to/file.html", :layout => false
+page "/test.html", :layout => false
 #
 # With alternative layout
 # page "/path/to/file.html", :layout => :otherlayout
@@ -50,6 +52,8 @@ set :css_dir, 'css'
 set :js_dir, 'js'
 
 set :images_dir, 'img'
+
+sprockets.append_path 'source/components'
 
 # Build-specific configuration
 configure :build do
