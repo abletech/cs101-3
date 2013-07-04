@@ -8,12 +8,6 @@ describe 'Array', ->
   it "should have correct length", =>
     @subject.length.should.equal(3)
 
-  it "should fail", =>
-    @subject.should.not.exist
-
-  it "should be pending"
-
-
   describe "#push()", =>
     beforeEach =>
       @subject.push(5)
@@ -36,4 +30,8 @@ describe 'Array', ->
       @subject.indexOf(3).should.equal(2)
 
 
+  it "should fail", =>
+    @subject.should.not.exist
+
+  it "should be pending"
 
