@@ -22,6 +22,6 @@ describe "Location", ->
         "type" : "Feature"
         "geometry" :
           "type" : "Point"
-          "coordinates" : [-41.29161, 174.77278]
+          "coordinates" : [174.77278, -41.29161]
         "properties" :
           "name" : "Abletech"
