@@ -4,7 +4,7 @@ describe "Location", ->
   beforeEach =>
     @subject = new Location("Abletech", -41.29161, 174.77278)
 
-  it "constuctor should set variables", =>
+  it "constuctor should set class variables", =>
     @subject.name.should.eq("Abletech")
     @subject.lat.should.eq(-41.29161)
     @subject.lng.should.eq(174.77278)

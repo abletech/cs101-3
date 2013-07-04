@@ -1,6 +1,10 @@
 ---
-title: HTML5 Boilerplate Middleman
+title: Locations Demo
 ---
+<h1>Locations Demo</h1>
+<div id="map"></div>
 
-<!-- Add your site or application content here -->
-<p>Hello world! This is HTML5 Boilerplate.</p>
+
+<% content_for :javascript do %>
+  <%= javascript_include_tag "app" %>
+<% end %>
