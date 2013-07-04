@@ -1,6 +1,7 @@
 # CoffeeScript 101 - Week 3
 
-This week we’ll be working utilising Middleman.
+This week we’ll be looking into Test Driven Development.
+We'll work with a pre-built [Middleman](http://middlemanapp.com/) project, which utilises Sprockets and ERB, so it should feel a bit simular to Rails.
 
 ##  Setup
 
@@ -19,4 +20,4 @@ Start Middleman server:
 ```sh
 $ bundle exec middleman server
 ```
-This can also be symlinked to your .pow directory.
+You can also symlink this project to your `.pow` directory.
