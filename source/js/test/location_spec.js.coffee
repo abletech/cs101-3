@@ -1,13 +1,11 @@
-#= require models/location
-
 describe "Location", ->
   beforeEach =>
-    @subject = new Location("Abletech", -41.29161, 174.77278)
+    @subject = new Location("Location1", 0, -180)
 
   it "constuctor should set class variables", =>
-    @subject.name.should.eq("Abletech")
-    @subject.lat.should.eq(-41.29161)
-    @subject.lng.should.eq(174.77278)
+    @subject.name.should.eq("Location1")
+    @subject.lat.should.eq(0)
+    @subject.lng.should.eq(-180)
 
   describe "#asGeoJSON()", =>
     beforeEach =>
@@ -22,6 +20,6 @@ describe "Location", ->
         "type" : "Feature"
         "geometry" :
           "type" : "Point"
-          "coordinates" : [174.77278, -41.29161]
+          "coordinates" : [-180, 0]
         "properties" :
-          "name" : "Abletech"
+          "name" : "Location1"
