@@ -1,11 +1,18 @@
 describe "LocationCollection", ->
   beforeEach =>
-    @subject = new LocationCollection(new Location("Location1", 0, -180), new Location("Location2", 45, 90))
+    @subject = new LocationCollection(new Location("Location1", 0, -179), new Location("Location2", 45, 90))
 
   it "should set class variables", =>
     expect(@subject.locations).not.be.undefined
 
-  describe "#asGeoJSON", =>
+  describe "#boundingBox()", =>
+    beforeEach =>
+      @subject = @subject.boundingBox()
+
+    it "should return [sw,ne] point array", =>
+      @subject.should.deep.eq([-179, 0], [90, 45])
+
+  describe "#asGeoJSON()", =>
     beforeEach =>
       @subject = @subject.asGeoJSON()
 

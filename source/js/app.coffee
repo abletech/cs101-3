@@ -16,6 +16,7 @@ window.onload = ->
   layer.addTo(map)
 
   L.geoJson(locations.asGeoJSON()).addTo(map)
+  map.fitBounds(locations.boundingBox())
 
 
 
