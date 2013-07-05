@@ -10,7 +10,7 @@ describe "LocationCollection", ->
       @subject = @subject.boundingBox()
 
     it "should return [sw,ne] point array", =>
-      @subject.should.deep.eq([-179, 0], [90, 45])
+      @subject.should.deep.eq([[-179, 0], [90, 45]])
 
   describe "#asGeoJSON()", =>
     beforeEach =>
