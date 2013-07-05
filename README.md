@@ -21,3 +21,11 @@ Start Middleman server:
 $ bundle exec middleman server
 ```
 You can also symlink this project to your `.pow` directory.
+
+## Useful Resources
+- [CoffeeScript Docs](http://coffeescript.org/)
+- [CoffeeScript Cookbook](http://coffeescriptcookbook.com/)
+- [Middleman](http://middlemanapp.com/)
+- [Mocha Docs](http://visionmedia.github.io/mocha/)
+- [Chai Docs](http://chaijs.com/)
+- [GeoJSON Spec](http://www.geojson.org/geojson-spec.html)
