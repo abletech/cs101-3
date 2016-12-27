@@ -26,6 +26,6 @@ You can also symlink this project to your `.pow` directory.
 - [CoffeeScript Docs](http://coffeescript.org/)
 - [CoffeeScript Cookbook](http://coffeescriptcookbook.com/)
 - [Middleman](http://middlemanapp.com/)
-- [Mocha Docs](http://visionmedia.github.io/mocha/)
+- [Mocha Docs](http://mochajs.org/)
 - [Chai Docs](http://chaijs.com/)
 - [GeoJSON Spec](http://www.geojson.org/geojson-spec.html)
